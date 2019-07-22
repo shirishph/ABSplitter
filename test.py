@@ -10,7 +10,7 @@ class ABSplitter_Test(unittest.TestCase):
         self.ab = ABSplitter.ABSplitter()
 
     def test(self):
-        self.ab.reset(40.0, 60.0)
+        self.ab.reset(30.0, 70.0)
         for i in range(100):
             state = ""
             if self.ab.getNextVersion() == 'VERSION_A':
